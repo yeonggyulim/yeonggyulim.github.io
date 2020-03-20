@@ -100,4 +100,4 @@ theme: next
 deploy:
   type: 'git'
   repo: 'https://github.com/yeonggyulim/yeonggyulim.github.io'
-  branch: 'gh-pages'
+  branch: 'master'
