@@ -101,3 +101,12 @@ deploy:
   type: 'git'
   repo: 'https://github.com/yeonggyulim/yeonggyulim.github.io'
   branch: 'master'
+
+# Post WordCount
+## Docs: https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  symbols: false
+  time: false
+  total_time: false
+
+
