@@ -1,6 +1,6 @@
 # Blog powered by [Hexo](https://hexo.io/) and [Next Theme](https://theme-next.org/)
 
-![image](./image.png)
+![image](./image.PNG)
 
 ## local 실행 환경
 
