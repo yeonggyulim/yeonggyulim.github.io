@@ -10,9 +10,6 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-
-  {% include '_scripts/analytics.swig' %}
-
   <div class="container{%- if theme.motion.enable %} use-motion{%- endif %}">
     <div class="headband"></div>
 
