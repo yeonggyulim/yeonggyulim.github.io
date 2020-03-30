@@ -56,11 +56,11 @@ $ npm install
 먼저 마음에 드는 테마를 [Hexo 테마](https://hexo.io/themes/)에서 고른 뒤 themes 폴더 안에 설치해 줍니다. 저는 [Next Theme](https://theme-next.org/)를 사용하기로 하였습니다. Theme에 새로운 기능이 생길 때마다 기능을 바로바로 pull 받아 사용하려면 git clone으로 설치한 뒤 2개의 프로젝트(개인 Hexo 블로그 프로젝트, 테마 프로젝트)를 관리해 주어야 하지만 저는 편의상 released된 [v7.7.2 버전](https://github.com/theme-next/hexo-theme-next/releases/tag/v7.7.2)을 다운로드해 사용하기로 하였습니다.
 
 zip 파일을 받아 themes 폴더 안에 넣어주고, <folder>의 _config.yml 파일에 theme을 `landscape`에서 `next`로 바꿔주었습니다.
-![config_theme](./images/config_theme.png)
+![config_theme](/images/github-pages-blog/hexo/config_theme.png)
 
 ### Github 프로젝트 생성
 메인 웹사이트로 사용하기 위해 [{username}.github.io](https://github.com/yeonggyulim/yeonggyulim.github.io) 명의 프로젝트 생성
-![github_project_init](./images/github_project_init.png)
+![github_project_init](/images/github-pages-blog/hexo/github_project_init.png)
 
 ### Github Repository에 Hexo 프로젝트 올리기
 프로젝트의 최상위 디렉토리에서 해당 명령어 입력
