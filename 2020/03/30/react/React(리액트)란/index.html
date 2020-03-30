@@ -21,15 +21,25 @@
     var CONFIG = {"hostname":"yeonggyulim.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#ff0000","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="로요그님의 블로그">
-<meta property="og:url" content="https://yeonggyulim.github.io/archives/2020/03/index.html">
+  <meta name="description" content="최근 들어 React로 프로젝트를 시작하는 곳도 많아지고 실제 업무에서 React를 도입하면서 React를 공부를 시작하였는데, 적으면서 공부하면 정리하기에도 좋고 복습하기에도 좋을 것 같아 블로그에 작성하기로 하였습니다. 이번 포스팅에서는 리액트를 소개하는 글을 적어보도록 하겠습니다. 1. React(리액트)React란? 사용자 인터페이스(User Int">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React(리액트)란?">
+<meta property="og:url" content="https://yeonggyulim.github.io/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/index.html">
 <meta property="og:site_name" content="로요그님의 블로그">
+<meta property="og:description" content="최근 들어 React로 프로젝트를 시작하는 곳도 많아지고 실제 업무에서 React를 도입하면서 React를 공부를 시작하였는데, 적으면서 공부하면 정리하기에도 좋고 복습하기에도 좋을 것 같아 블로그에 작성하기로 하였습니다. 이번 포스팅에서는 리액트를 소개하는 글을 적어보도록 하겠습니다. 1. React(리액트)React란? 사용자 인터페이스(User Int">
 <meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://yeonggyulim.github.io/images/react/react.png">
+<meta property="og:image" content="https://yeonggyulim.github.io/images/react/react_component.png">
+<meta property="og:image" content="https://yeonggyulim.github.io/images/react/react_abstraction.png">
+<meta property="article:published_time" content="2020-03-30T15:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-30T15:47:23.876Z">
 <meta property="article:author" content="로요그">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="리액트">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yeonggyulim.github.io/images/react/react.png">
 
-<link rel="canonical" href="https://yeonggyulim.github.io/archives/2020/03/">
+<link rel="canonical" href="https://yeonggyulim.github.io/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/">
 
 
 <script id="page-configurations">
@@ -37,11 +47,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false
+    isPost : true
   };
 </script>
 
-  <title>아카이브 | 로요그님의 블로그</title>
+  <title>React(리액트)란? | 로요그님의 블로그</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117510353-2"></script>
     <script>
@@ -168,73 +178,137 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="ko">
+    <link itemprop="mainEntityOfPage" href="https://yeonggyulim.github.io/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="로요그">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="로요그님의 블로그">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          React(리액트)란?
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">작성일</span>
+              
+
+              <time title="Post created: 2020-03-31 00:00:00 / Updated at: 00:47:23" itemprop="dateCreated datePublished" datetime="2020-03-31T00:00:00+09:00">2020-03-31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/React/" itemprop="url" rel="index"><span itemprop="name">React</span></a>
+                </span>
+            </span>
+
+          
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">음..! 총 2개의 포스트 포스트를 마저 작성하세요</span>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/30/react/React(리액트)란/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
-    </div>
+        <p>최근 들어 React로 프로젝트를 시작하는 곳도 많아지고 실제 업무에서 React를 도입하면서 React를 공부를 시작하였는데, 적으면서 공부하면 정리하기에도 좋고 복습하기에도 좋을 것 같아 블로그에 작성하기로 하였습니다. 이번 포스팅에서는 리액트를 소개하는 글을 적어보도록 하겠습니다.</p>
+<h2 id="1-React-리액트"><a href="#1-React-리액트" class="headerlink" title="1. React(리액트)"></a>1. React(리액트)</h2><h3 id="React란"><a href="#React란" class="headerlink" title="React란?"></a><span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvJUVCJUE2JUFDJUVDJTk1JUExJUVEJThBJUI4XyglRUMlOUUlOTAlRUIlQjAlOTQlRUMlOEElQTQlRUQlODElQUMlRUIlQTYlQkQlRUQlOEElQjhfJUVCJTlEJUJDJUVDJTlEJUI0JUVCJUI4JThDJUVCJTlGJUFDJUVCJUE2JUFDKQ==" title="https://ko.wikipedia.org/wiki/%EB%A6%AC%EC%95%A1%ED%8A%B8_(%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)">React란?<i class="fa fa-external-link"></i></span></h3><ul>
+<li>사용자 인터페이스(User Interface)를 만들기 위해 사용하는 자바스크립트 라이브러리</li>
+</ul>
+<h3 id="React는-뷰-계층"><a href="#React는-뷰-계층" class="headerlink" title="React는 뷰 계층"></a>React는 뷰 계층</h3><p>리액트는 일반적으로 애플리케이션의 뷰 계층으로 여겨집니다.<br><img src="/images/react/react.png" alt="react"><br>그림과 같이 데이터를 생성하는 애플리케이션 로직이 있고, 이 데이터를 UI 화면에 렌더링 하기 위해 리액트 컴포넌트에 보냅니다. 컴포넌트는 페이지의 HTML 코드를 얻는 작업을 합니다. </p>
+<h3 id="React-구성"><a href="#React-구성" class="headerlink" title="React 구성"></a>React 구성</h3><p>리액트는 프로그래밍 할 때 사용하는 <strong>React Component</strong>와 렌더링할 때 사용하는 <strong>React DOM</strong> 으로 나뉩니다.</p>
+<a id="more"></a>
+<p><img src="/images/react/react_component.png" alt="react_component"><br>리액트 컴포넌트에서 알아야할 내용은 다음과 같습니다.</p>
+<ul>
+<li>데이터: 컴포넌트가 렌더링되는 곳 어디든 있는 데이터(컴포넌트가 어디있든 상관없음)</li>
+<li>생명주기: 컴포넌트 생명주기 내의 변화에 반응하도록 구현한 메서드</li>
+<li>이벤트: 사용자와 상호 작용하기 위해 작성한 코드</li>
+<li>JSX: UI 구조를 표현하기 위해 사용되는 리액트 컴포넌트의 문법</li>
+</ul>
+<h3 id="React의-추상화"><a href="#React의-추상화" class="headerlink" title="React의 추상화"></a>React의 추상화</h3><p>리액트는 여러 플랫폼에서 UI 구조를 구현하는데 사용할 수 있는 추상화 수준과 확장성을 가지고 있습니다.<br><img src="/images/react/react_abstraction.png" alt="react_abstraction"></p>
+<!-- ## 2. JSX
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+### JSX -->
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-31T00:00:00+09:00"
-              content="2020-03-31">
-          03-31
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/" itemprop="url">
-            <span itemprop="name">React(리액트)란?</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-30T17:26:29+09:00"
-              content="2020-03-30">
-          03-30
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2020/03/30/github-pages-blog/hexo/Github-Pages-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-with-Hexo/" itemprop="url">
-            <span itemprop="name">Github Pages 블로그 만들기 with Hexo</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
+<h2 id="2-참조"><a href="#2-참조" class="headerlink" title="2. 참조"></a>2. 참조</h2><ul>
+<li>리액트&amp;리액트 네이티브 통합 교과서</li>
+</ul>
 
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/React/" rel="tag"># React</a>
+              <a href="/tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/" rel="tag"># 리액트</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/30/github-pages-blog/hexo/Github-Pages-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-with-Hexo/" rel="prev" title="Github Pages 블로그 만들기 with Hexo">
+      <i class="fa fa-chevron-left"></i> Github Pages 블로그 만들기 with Hexo
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -281,6 +355,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-React-리액트"><span class="nav-text">1. React(리액트)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#React란"><span class="nav-text">React란?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#React는-뷰-계층"><span class="nav-text">React는 뷰 계층</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#React-구성"><span class="nav-text">React 구성</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#React의-추상화"><span class="nav-text">React의 추상화</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-참조"><span class="nav-text">2. 참조</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -424,6 +499,26 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://yeonggyulim.github.io/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/";
+    this.page.identifier = "2020/03/30/react/React(리액트)란/";
+    this.page.title = "React(리액트)란?";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-yeonggyulim-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
 </script>
 
 </body>

@@ -131,17 +131,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>태그<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>태그<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>카테고리<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>카테고리<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>아카이브<span class="badge">1</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>아카이브<span class="badge">2</span></a>
 
   </li>
   </ul>
@@ -173,6 +173,100 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="ko">
+    <link itemprop="mainEntityOfPage" href="https://yeonggyulim.github.io/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="로요그">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="로요그님의 블로그">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/" class="post-title-link" itemprop="url">React(리액트)란?</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">작성일</span>
+              
+
+              <time title="Post created: 2020-03-31 00:00:00 / Updated at: 00:47:23" itemprop="dateCreated datePublished" datetime="2020-03-31T00:00:00+09:00">2020-03-31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/React/" itemprop="url" rel="index"><span itemprop="name">React</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/30/react/React(리액트)란/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>최근 들어 React로 프로젝트를 시작하는 곳도 많아지고 실제 업무에서 React를 도입하면서 React를 공부를 시작하였는데, 적으면서 공부하면 정리하기에도 좋고 복습하기에도 좋을 것 같아 블로그에 작성하기로 하였습니다. 이번 포스팅에서는 리액트를 소개하는 글을 적어보도록 하겠습니다.</p>
+<h2 id="1-React-리액트"><a href="#1-React-리액트" class="headerlink" title="1. React(리액트)"></a>1. React(리액트)</h2><h3 id="React란"><a href="#React란" class="headerlink" title="React란?"></a><span class="exturl" data-url="aHR0cHM6Ly9rby53aWtpcGVkaWEub3JnL3dpa2kvJUVCJUE2JUFDJUVDJTk1JUExJUVEJThBJUI4XyglRUMlOUUlOTAlRUIlQjAlOTQlRUMlOEElQTQlRUQlODElQUMlRUIlQTYlQkQlRUQlOEElQjhfJUVCJTlEJUJDJUVDJTlEJUI0JUVCJUI4JThDJUVCJTlGJUFDJUVCJUE2JUFDKQ==" title="https://ko.wikipedia.org/wiki/%EB%A6%AC%EC%95%A1%ED%8A%B8_(%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)">React란?<i class="fa fa-external-link"></i></span></h3><ul>
+<li>사용자 인터페이스(User Interface)를 만들기 위해 사용하는 자바스크립트 라이브러리</li>
+</ul>
+<h3 id="React는-뷰-계층"><a href="#React는-뷰-계층" class="headerlink" title="React는 뷰 계층"></a>React는 뷰 계층</h3><p>리액트는 일반적으로 애플리케이션의 뷰 계층으로 여겨집니다.<br><img src="/images/react/react.png" alt="react"><br>그림과 같이 데이터를 생성하는 애플리케이션 로직이 있고, 이 데이터를 UI 화면에 렌더링 하기 위해 리액트 컴포넌트에 보냅니다. 컴포넌트는 페이지의 HTML 코드를 얻는 작업을 합니다. </p>
+<h3 id="React-구성"><a href="#React-구성" class="headerlink" title="React 구성"></a>React 구성</h3><p>리액트는 프로그래밍 할 때 사용하는 <strong>React Component</strong>와 렌더링할 때 사용하는 <strong>React DOM</strong> 으로 나뉩니다.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/30/react/React(%EB%A6%AC%EC%95%A1%ED%8A%B8)%EB%9E%80/#more" rel="contents">
+                더 읽어보기 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="ko">
     <link itemprop="mainEntityOfPage" href="https://yeonggyulim.github.io/2020/03/30/github-pages-blog/hexo/Github-Pages-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-with-Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -196,10 +290,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">작성일</span>
-              
 
-              <time title="Post created: 2020-03-30 17:26:29 / Updated at: 20:14:07" itemprop="dateCreated datePublished" datetime="2020-03-30T17:26:29+09:00">2020-03-30</time>
+              <time title="Post created: 2020-03-30 17:26:29" itemprop="dateCreated datePublished" datetime="2020-03-30T17:26:29+09:00">2020-03-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Updated at: 2020-03-31 00:47:23" itemprop="dateModified" datetime="2020-03-31T00:47:23+09:00">2020-03-31</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -338,20 +438,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">포스트</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">카테고리</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">태그</span></a>
       </div>
   </nav>
@@ -396,7 +496,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="Symbols count total">1k</span>
+    <span title="Symbols count total">2k</span>
 </div>
   <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v4.2.0
   </div>
