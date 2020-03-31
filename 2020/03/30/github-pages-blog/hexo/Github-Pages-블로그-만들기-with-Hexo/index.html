@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://yeonggyulim.github.io/images/github-pages-blog/hexo/config_theme.png">
 <meta property="og:image" content="https://yeonggyulim.github.io/images/github-pages-blog/hexo/github_project_init.png">
 <meta property="article:published_time" content="2020-03-30T08:26:29.000Z">
-<meta property="article:modified_time" content="2020-03-30T15:47:23.876Z">
+<meta property="article:modified_time" content="2020-03-31T04:54:51.915Z">
 <meta property="article:author" content="로요그">
 <meta property="article:tag" content="Github Pages">
 <meta property="article:tag" content="Hexo">
@@ -91,7 +91,8 @@
   </style>
 </noscript>
 
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -213,7 +214,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Updated at: 2020-03-31 00:47:23" itemprop="dateModified" datetime="2020-03-31T00:47:23+09:00">2020-03-31</time>
+                <time title="Updated at: 2020-03-31 13:54:51" itemprop="dateModified" datetime="2020-03-31T13:54:51+09:00">2020-03-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -268,21 +269,28 @@
 <li><span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">Git 설치<i class="fa fa-external-link"></i></span></li>
 </ul>
 <h3 id="Hexo-Cli-설치"><a href="#Hexo-Cli-설치" class="headerlink" title="Hexo Cli 설치"></a>Hexo Cli 설치</h3><p>글로벌로 설치하고 싶지 않은 사용자들은 npm으로 hexo만 설치하고, npx hexo 명령어를 사용하지만 편의상 hexo cli 사용</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<h3 id="Hexo-프로젝트-Setup"><a href="#Hexo-프로젝트-Setup" class="headerlink" title="Hexo 프로젝트 Setup"></a>Hexo 프로젝트 Setup</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<p>설치하고 나면 다음과 같은 프로젝트 폴더 구조를 볼 수 있습니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;folder&gt;</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br><span class="line">    └── landscape</span><br></pre></td></tr></table></figure>
-
-<h3 id="Theme-설치-및-사용"><a href="#Theme-설치-및-사용" class="headerlink" title="Theme 설치 및 사용"></a>Theme 설치 및 사용</h3><p>먼저 마음에 드는 테마를 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=" title="https://hexo.io/themes/">Hexo 테마<i class="fa fa-external-link"></i></span>에서 고른 뒤 themes 폴더 안에 설치해 줍니다. 저는 <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZy8=" title="https://theme-next.org/">Next Theme<i class="fa fa-external-link"></i></span>를 사용하기로 하였습니다. Theme에 새로운 기능이 생길 때마다 기능을 바로바로 pull 받아 사용하려면 git clone으로 설치한 뒤 2개의 프로젝트(개인 Hexo 블로그 프로젝트, 테마 프로젝트)를 관리해 주어야 하지만 저는 편의상 released된 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ny43LjI=" title="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.7.2">v7.7.2 버전<i class="fa fa-external-link"></i></span>을 다운로드해 사용하기로 하였습니다.</p>
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="Hexo-프로젝트-Setup"><a href="#Hexo-프로젝트-Setup" class="headerlink" title="Hexo 프로젝트 Setup"></a>Hexo 프로젝트 Setup</h3><pre><code>$ hexo init &lt;folder&gt;
+$ cd &lt;folder&gt;
+$ npm install</code></pre><p>설치하고 나면 다음과 같은 프로젝트 폴더 구조를 볼 수 있습니다.</p>
+<pre><code>&lt;folder&gt;
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+    └── landscape</code></pre><h3 id="Theme-설치-및-사용"><a href="#Theme-설치-및-사용" class="headerlink" title="Theme 설치 및 사용"></a>Theme 설치 및 사용</h3><p>먼저 마음에 드는 테마를 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=" title="https://hexo.io/themes/">Hexo 테마<i class="fa fa-external-link"></i></span>에서 고른 뒤 themes 폴더 안에 설치해 줍니다. 저는 <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZy8=" title="https://theme-next.org/">Next Theme<i class="fa fa-external-link"></i></span>를 사용하기로 하였습니다. Theme에 새로운 기능이 생길 때마다 기능을 바로바로 pull 받아 사용하려면 git clone으로 설치한 뒤 2개의 프로젝트(개인 Hexo 블로그 프로젝트, 테마 프로젝트)를 관리해 주어야 하지만 저는 편의상 released된 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ny43LjI=" title="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.7.2">v7.7.2 버전<i class="fa fa-external-link"></i></span>을 다운로드해 사용하기로 하였습니다.</p>
 <p>zip 파일을 받아 themes 폴더 안에 넣어주고, <folder>의 _config.yml 파일에 theme을 <code>landscape</code>에서 <code>next</code>로 바꿔주었습니다.<br><img src="/images/github-pages-blog/hexo/config_theme.png" alt="config_theme"></p>
 <h3 id="Github-프로젝트-생성"><a href="#Github-프로젝트-생성" class="headerlink" title="Github 프로젝트 생성"></a>Github 프로젝트 생성</h3><p>메인 웹사이트로 사용하기 위해 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3llb25nZ3l1bGltL3llb25nZ3l1bGltLmdpdGh1Yi5pbw==" title="https://github.com/yeonggyulim/yeonggyulim.github.io">{username}.github.io<i class="fa fa-external-link"></i></span> 명의 프로젝트 생성<br><img src="/images/github-pages-blog/hexo/github_project_init.png" alt="github_project_init"></p>
 <h3 id="Github-Repository에-Hexo-프로젝트-올리기"><a href="#Github-Repository에-Hexo-프로젝트-올리기" class="headerlink" title="Github Repository에 Hexo 프로젝트 올리기"></a>Github Repository에 Hexo 프로젝트 올리기</h3><p>프로젝트의 최상위 디렉토리에서 해당 명령어 입력</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &#39;hexo blog first commit&#39;</span><br><span class="line">$ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;&#123;username&#125;&#x2F;&#123;username&#125;.github.io.git</span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-
-<h3 id="생성한-Hexo-프로젝트-테스트"><a href="#생성한-Hexo-프로젝트-테스트" class="headerlink" title="생성한 Hexo 프로젝트 테스트"></a>생성한 Hexo 프로젝트 테스트</h3><p>프로젝트의 최상위 디렉토리에서 해당 명령어 입력</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p><span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==" title="http://localhost:4000/">로컬호스트<i class="fa fa-external-link"></i></span>로 접속하면 생성한 블로그를 로컬 환경에서 확인할 수 있습니다.</p>
+<pre><code>$ git init
+$ git add .
+$ git commit -m &#39;hexo blog first commit&#39;
+$ git remote add origin https://github.com/{username}/{username}.github.io.git
+$ git push -u origin master</code></pre><h3 id="생성한-Hexo-프로젝트-테스트"><a href="#생성한-Hexo-프로젝트-테스트" class="headerlink" title="생성한 Hexo 프로젝트 테스트"></a>생성한 Hexo 프로젝트 테스트</h3><p>프로젝트의 최상위 디렉토리에서 해당 명령어 입력</p>
+<pre><code>$ hexo server</code></pre><p><span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==" title="http://localhost:4000/">로컬호스트<i class="fa fa-external-link"></i></span>로 접속하면 생성한 블로그를 로컬 환경에서 확인할 수 있습니다.</p>
 <p>다음 포스트에서는 <span class="exturl" data-url="aHR0cHM6Ly90cmF2aXMtY2kuY29tLw==" title="https://travis-ci.com/">Travis CI<i class="fa fa-external-link"></i></span>를 이용하여 자동 배포하는 과정을 다루어보도록 하겠습니다.</p>
 
     </div>
@@ -448,7 +456,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="Symbols count total">2k</span>
+    <span title="Symbols count total">3k</span>
 </div>
   <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v4.2.0
   </div>
