@@ -486,6 +486,10 @@ exturl: true
 # See: https://www.google.com/webmasters
 google_site_verification: L5btjZ6wd80cbKSP5YuYCBQ8JzGU3c0Fpe9HSWF_ln0
 
+# Naver Webmaster tools verification.
+# See: https://searchadvisor.naver.com/console/board
+naver_site_verification: 0ce4366ef827fa44f8ec3400b801a5de99697f9d
+
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
 bing_site_verification: 

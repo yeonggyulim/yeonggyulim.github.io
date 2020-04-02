@@ -29,6 +29,9 @@
 {%- if theme.google_site_verification %}
   <meta name="google-site-verification" content="{{ theme.google_site_verification }}">
 {%- endif %}
+{%- if theme.naver_site_verification %}
+  <meta name="naver-site-verification" content="{{ theme.naver_site_verification }}">
+{%- endif %}
 {%- if theme.bing_site_verification %}
   <meta name="msvalidate.01" content="{{ theme.bing_site_verification }}">
 {%- endif %}
