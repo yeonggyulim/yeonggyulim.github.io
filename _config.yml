@@ -58,7 +58,6 @@ prism_plugin:
   theme: 'default'
   line_number: true
 
-
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -108,6 +107,28 @@ deploy:
   type: 'git'
   repo: 'https://github.com/yeonggyulim/yeonggyulim.github.io'
   branch: 'master'
+
+# RSS
+## Docs: https://github.com/hexojs/hexo-generator-feed
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+
+# Sitemap
+## Docs: https://www.npmjs.com/package/hexo-generator-seo-friendly-sitemap
+sitemap:
+  path: sitemap.xml
+  tag: true
+  category: true
+
+# robotstxt
+## Docs: https://github.com/leecrossley/hexo-generator-robotstxt
+robotstxt:
+  useragent: "*"
+  allow:
+    - /
+  sitemap: https://yeonggyulim.github.io/sitemap.xml
 
 # Post WordCount
 ## Docs: https://github.com/theme-next/hexo-symbols-count-time
