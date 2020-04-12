@@ -45,18 +45,12 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
-
-# prism_plugin in order to highlight jsx codes
-prism_plugin: 
-  mode: 'preprocess'
-  theme: 'default'
-  line_number: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')

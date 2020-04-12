@@ -40,7 +40,7 @@ updated: 2020-03-31 13:53:00
 - Javscript XML의 줄임말로 Javscript 언어 문법의 확장판
 - 외관이 HTML과 비슷하여 개발자들에게 친숙한 문법으로 컴포넌트 구조화 가능
 
-```jsx
+```
 class App extends React.Component {
   render() {
     return (
@@ -60,14 +60,14 @@ class App extends React.Component {
 ### Javscript Expressions
 Javascript **expressions** (but not **statements**)는 JSX안에 `{}`로 표현할 수 있습니다.
 
-```jsx
+```
 <h1>{10+1}</h1>
 ```
 
 ### Conditional Statements
 **if-else statements** 대신 **conditional expressions(조건 연산자)**로 대신할 수 있습니다.
 
-```jsx
+```
 class App extends React.Component {
   render() {
     const i = 1;
@@ -82,7 +82,7 @@ class App extends React.Component {
 
 **함수**와 **JSX**는 **conditionals(조건문)**에서 사용할 수 있습니다.
 
-```jsx
+```
 class App extends React.Component {
   render() {
     const sections = [1, 2, 3];
